@@ -13,7 +13,8 @@ function hasUrl(
 }
 
 export const Header = () => {
-	const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || '/';
+	const myPortfolioUrl = "https://victorious.vercel.app/"
+	// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || '/';
 	const { publication } = useAppContext();
 	const PUBLICATION_LOGO = publication.preferences.darkMode?.logo || publication.preferences.logo;
 	const navbarItems = publication.preferences.navbarItems.filter(hasUrl);
@@ -107,7 +108,7 @@ export const Header = () => {
 				</div>
 				<div className="col-span-2 flex flex-row items-center justify-end gap-5 text-slate-300 lg:col-span-3">
 					<nav className="hidden lg:block">{navList}</nav>
-					<Button href={baseUrl} as="a" type="primary" label="Book a demo" />
+					<Button href={myPortfolioUrl} target="_blank" as="a" type="primary" label="Author Portfolio" />
 				</div>
 			</Container>
 		</header>

@@ -5,13 +5,16 @@ module.exports = {
 	content: ['./components/**/*.tsx', './pages/**/*.tsx'],
 	theme: {
 		extend: {
+			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				'accent-1': '#FAFAFA',
 				'accent-2': '#EAEAEA',
 				'accent-7': '#333',
 				success: '#0070f3',
 				cyan: '#79FFE1',
-				primary: colors.blue,
+				primary: colors.green,
 			},
 			spacing: {
 				28: '7rem',

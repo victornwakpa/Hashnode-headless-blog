@@ -20,7 +20,7 @@ export const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) =
 	const postURL = `/${slug}`;
 
 	return (
-		<div className="grid grid-cols-1 gap-5">
+		<div className="grid grid-cols-1 gap-5 rounded-xl overflow-hidden border dark:border-none shadow-lg dark:shadow-black bg-green-50 dark:bg-black dark:bg-opacity-10 border-gray-100">
 			<div className="col-span-1">
 				<CoverImage
 					slug={slug}
@@ -28,7 +28,7 @@ export const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) =
 					src={resizeImage(coverImage, { w: 400, h: 210, c: 'thumb' }, DEFAULT_COVER)}
 				/>
 			</div>
-			<div className="col-span-1 flex flex-col gap-2">
+			<div className="col-span-1 flex flex-col gap-2 p-6">
 				<h1 className="text-lg font-semibold leading-tight text-slate-800 dark:text-neutral-50">
 					<Link
 						href={postURL}
