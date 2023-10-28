@@ -15,6 +15,8 @@ module.exports = {
 				success: '#0070f3',
 				cyan: '#79FFE1',
 				primary: colors.green,
+				'darkbg': '#040D12',
+				'subscribebg':'#183D3D',
 			},
 			spacing: {
 				28: '7rem',

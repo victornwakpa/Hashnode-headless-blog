@@ -156,12 +156,12 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 					</div>
 
 					{allPosts.length > 0 && (
-						<div className="bg-primary-50 grid grid-cols-4 shadow-lg rounded-lg px-5 py-5 dark:bg-neutral-900 md:py-10">
+						<div className="bg-primary-50 grid grid-cols-4 shadow-lg rounded-lg px-5 py-5 dark:bg-subscribebg md:py-10">
 							<div className="col-span-full md:col-span-2 md:col-start-2">
 								<h2 className="text-primary-600 dark:text-primary-500 mb-5 text-center text-3xl font-semibold">
 									Subscribe to our newsletter
 								</h2>
-								<p className="text-center dark:text-white mb-5">Stay in the loop with <span className="font-semibold text-lg text-green-500 tracking-wider">Victorious Insight!</span> Get our latest articles delivered straight to your inbox. Subscribe to our newsletter today and never miss out on insightful content.</p>
+								<p className="text-center dark:text-white mb-5">Stay in the loop with <span className="font-semibold text-lg text-green-500 tracking-wider">{publication.title}!</span> Get our latest articles delivered straight to your inbox. Subscribe to our newsletter today and never miss out on insightful content.</p>
 								<SubscribeForm />
 							</div>
 						</div>

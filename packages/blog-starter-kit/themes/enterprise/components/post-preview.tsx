@@ -20,7 +20,7 @@ export const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) =
 	const postURL = `/${slug}`;
 
 	return (
-		<div className="grid grid-cols-1 gap-5 rounded-xl overflow-hidden border dark:border-none shadow-lg dark:shadow-black bg-green-50 dark:bg-black dark:bg-opacity-10 border-gray-100">
+		<div className="grid grid-cols-1 gap-5 rounded-xl overflow-hidden border dark:border-none shadow-xl dark:shadow-black bg-green-50 dark:bg-black dark:bg-opacity-10 border-gray-100">
 			<div className="col-span-1">
 				<CoverImage
 					slug={slug}
@@ -38,7 +38,7 @@ export const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) =
 					</Link>
 				</h1>
 				<Link href={postURL}>
-					<p className="text-md leading-snug text-slate-500 dark:text-neutral-400">
+					<p className="text-md leading-snug text-slate-600 dark:text-neutral-400">
 						{excerpt.length > 140 ? excerpt.substring(0, 140) + '…' : excerpt}
 					</p>
 				</Link>
